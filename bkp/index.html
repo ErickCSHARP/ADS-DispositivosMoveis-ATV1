@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">  -->
+        <meta content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> -->
+        <meta name="color-scheme" content="light dark">
+        <!-- <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/calculadora.css">
+        <title>Calculadora de Duraçãos</title>
+        
+    
+    
+  </head>
+  <body>
+    <h1>Calculadora de horas2</h1>
+    <div class="calculadora card">
+
+        <div class="caluladora-mostrador">
+            <div class="mostrador-superior" style="display: flex; flex-direction: row;">
+              <div id="m-delta" style="flex: auto; text-align: start;">
+                F1
+               </div>
+              <div id="m-expressao" style="flex: auto; text-align: end;">
+                0:00
+              </div>
+            </div>
+            <div id="m-operando" class="calculadora-mostrador-operando">
+                0:00
+            </div>
+            <div class="mostrador-inferior">
+              <div id="m-memoria" style="flex: auto; text-align: start;">Mem</div>
+              <div id="m-acumulador" style="flex: auto; text-align: end;">Acc</div>
+          </div>
+        </div>
+        <!-- <input type="text" class="caluladora-mostrador z-depth-1" value="" disabled /> -->
+      
+        <div class="teclado">
+      
+          <button type="button" class="btn-op" data-action="+" >+</button>
+          <button type="button" class="btn-op" data-action="-" >-</button>
+          <button type="button" class="btn-op" data-action="*" >&times;</button>
+          <button type="button" class="btn-op" data-action="/" >&divide;</button>
+      
+          <button type="button" class="btn-number">7</button>
+          <button type="button" class="btn-number">8</button>
+          <button type="button" class="btn-number">9</button>
+      
+          <button type="button" class="btn-op" data-action="delta" >Δ</button>
+          <button type="button" class="btn-number">4</button>
+          <button type="button" class="btn-number">5</button>
+          <button type="button" class="btn-number">6</button>
+      
+      
+          <button type="button" class="btn-number">1</button>
+          <button type="button" class="btn-number">2</button>
+          <button type="button" class="btn-number">3</button>
+      
+      
+          <button type="button" class="btn-number">0</button>
+          <button type="button" class="decimal function btn-apagar" data-action="limpar"><i class="fa-solid fa-eraser"></i></button>
+          <button type="button" class="all-clear function btn-resetar" data-action="resetar" >AC</button>
+      
+          <button type="button" class="equal-sign operacao btn-calcular" data-action="=" >=</button>
+      
+        </div>
+      </div>
+
+    <!-- <script src="js/moment.js" type="module"></script>   -->
+    <script src="cordova.js"></script>
+    <script src="js/calculadora.js"></script>
+     </body>
+</html>
+    <!-- </head>
+    <body>
+        <div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device22</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html> -->
